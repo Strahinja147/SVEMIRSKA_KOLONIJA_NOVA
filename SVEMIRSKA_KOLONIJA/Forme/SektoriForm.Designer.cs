@@ -70,38 +70,51 @@
             // 
             // btnDodajSektor
             // 
+            this.btnDodajSektor.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodajSektor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodajSektor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodajSektor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDodajSektor.Location = new System.Drawing.Point(385, 291);
             this.btnDodajSektor.Name = "btnDodajSektor";
             this.btnDodajSektor.Size = new System.Drawing.Size(114, 39);
             this.btnDodajSektor.TabIndex = 1;
             this.btnDodajSektor.Text = "Dodaj sektor";
-            this.btnDodajSektor.UseVisualStyleBackColor = true;
+            this.btnDodajSektor.UseVisualStyleBackColor = false;
             this.btnDodajSektor.Click += new System.EventHandler(this.btnDodajSektor_Click);
             // 
             // btnIzmeniSektor
             // 
+            this.btnIzmeniSektor.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzmeniSektor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzmeniSektor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzmeniSektor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzmeniSektor.Location = new System.Drawing.Point(385, 345);
             this.btnIzmeniSektor.Name = "btnIzmeniSektor";
             this.btnIzmeniSektor.Size = new System.Drawing.Size(114, 39);
             this.btnIzmeniSektor.TabIndex = 2;
             this.btnIzmeniSektor.Text = "Izmeni sektor";
-            this.btnIzmeniSektor.UseVisualStyleBackColor = true;
+            this.btnIzmeniSektor.UseVisualStyleBackColor = false;
             this.btnIzmeniSektor.Click += new System.EventHandler(this.btnIzmeniSektor_Click);
             // 
             // btnObrisiSektor
             // 
+            this.btnObrisiSektor.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnObrisiSektor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnObrisiSektor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnObrisiSektor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObrisiSektor.Location = new System.Drawing.Point(385, 399);
             this.btnObrisiSektor.Name = "btnObrisiSektor";
             this.btnObrisiSektor.Size = new System.Drawing.Size(114, 39);
             this.btnObrisiSektor.TabIndex = 3;
             this.btnObrisiSektor.Text = "Obriši sektor";
-            this.btnObrisiSektor.UseVisualStyleBackColor = true;
+            this.btnObrisiSektor.UseVisualStyleBackColor = false;
             this.btnObrisiSektor.Click += new System.EventHandler(this.btnObrisiSektor_Click);
             // 
             // SektoriForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(511, 450);
             this.Controls.Add(this.btnObrisiSektor);
             this.Controls.Add(this.btnIzmeniSektor);

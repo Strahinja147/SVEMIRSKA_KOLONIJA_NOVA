@@ -70,38 +70,51 @@
             // 
             // btnDodajRobota
             // 
+            this.btnDodajRobota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodajRobota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodajRobota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.btnDodajRobota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDodajRobota.Location = new System.Drawing.Point(384, 291);
             this.btnDodajRobota.Name = "btnDodajRobota";
             this.btnDodajRobota.Size = new System.Drawing.Size(113, 39);
             this.btnDodajRobota.TabIndex = 1;
             this.btnDodajRobota.Text = "Dodaj robota";
-            this.btnDodajRobota.UseVisualStyleBackColor = true;
+            this.btnDodajRobota.UseVisualStyleBackColor = false;
             this.btnDodajRobota.Click += new System.EventHandler(this.btnDodajRobota_Click);
             // 
             // btnIzmeniRobota
             // 
+            this.btnIzmeniRobota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzmeniRobota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzmeniRobota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.btnIzmeniRobota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzmeniRobota.Location = new System.Drawing.Point(384, 345);
             this.btnIzmeniRobota.Name = "btnIzmeniRobota";
             this.btnIzmeniRobota.Size = new System.Drawing.Size(113, 39);
             this.btnIzmeniRobota.TabIndex = 2;
             this.btnIzmeniRobota.Text = "Izmeni robota";
-            this.btnIzmeniRobota.UseVisualStyleBackColor = true;
+            this.btnIzmeniRobota.UseVisualStyleBackColor = false;
             this.btnIzmeniRobota.Click += new System.EventHandler(this.btnIzmeniRobota_Click);
             // 
             // btnObrisiRobota
             // 
+            this.btnObrisiRobota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnObrisiRobota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnObrisiRobota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.btnObrisiRobota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObrisiRobota.Location = new System.Drawing.Point(384, 399);
             this.btnObrisiRobota.Name = "btnObrisiRobota";
             this.btnObrisiRobota.Size = new System.Drawing.Size(113, 39);
             this.btnObrisiRobota.TabIndex = 3;
             this.btnObrisiRobota.Text = "Obriši robota";
-            this.btnObrisiRobota.UseVisualStyleBackColor = true;
+            this.btnObrisiRobota.UseVisualStyleBackColor = false;
             this.btnObrisiRobota.Click += new System.EventHandler(this.btnObrisiRobota_Click);
             // 
             // RobotiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(511, 450);
             this.Controls.Add(this.btnObrisiRobota);
             this.Controls.Add(this.btnIzmeniRobota);

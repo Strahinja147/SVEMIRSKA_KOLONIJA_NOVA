@@ -71,5 +71,10 @@ namespace SVEMIRSKA_KOLONIJA.Forme
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void labelSpecijalizacija_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

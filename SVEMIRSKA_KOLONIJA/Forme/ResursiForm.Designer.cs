@@ -46,11 +46,12 @@
             this.lvResursi.FullRowSelect = true;
             this.lvResursi.GridLines = true;
             this.lvResursi.HideSelection = false;
-            this.lvResursi.Location = new System.Drawing.Point(12, 12);
+            this.lvResursi.Location = new System.Drawing.Point(9, 10);
+            this.lvResursi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvResursi.MultiSelect = false;
             this.lvResursi.Name = "lvResursi";
             this.lvResursi.Scrollable = false;
-            this.lvResursi.Size = new System.Drawing.Size(373, 369);
+            this.lvResursi.Size = new System.Drawing.Size(281, 301);
             this.lvResursi.TabIndex = 0;
             this.lvResursi.UseCompatibleStateImageBehavior = false;
             this.lvResursi.View = System.Windows.Forms.View.Details;
@@ -71,44 +72,61 @@
             // 
             // btnDodajResurs
             // 
-            this.btnDodajResurs.Location = new System.Drawing.Point(412, 12);
+            this.btnDodajResurs.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodajResurs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodajResurs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodajResurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDodajResurs.Location = new System.Drawing.Point(309, 10);
+            this.btnDodajResurs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodajResurs.Name = "btnDodajResurs";
-            this.btnDodajResurs.Size = new System.Drawing.Size(170, 106);
+            this.btnDodajResurs.Size = new System.Drawing.Size(128, 86);
             this.btnDodajResurs.TabIndex = 1;
             this.btnDodajResurs.Text = "Dodaj resurs";
-            this.btnDodajResurs.UseVisualStyleBackColor = true;
+            this.btnDodajResurs.UseVisualStyleBackColor = false;
             this.btnDodajResurs.Click += new System.EventHandler(this.btnDodajResurs_Click);
             // 
             // btnIzmeniResurs
             // 
-            this.btnIzmeniResurs.Location = new System.Drawing.Point(412, 144);
+            this.btnIzmeniResurs.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzmeniResurs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzmeniResurs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzmeniResurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzmeniResurs.Location = new System.Drawing.Point(309, 117);
+            this.btnIzmeniResurs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIzmeniResurs.Name = "btnIzmeniResurs";
             this.btnIzmeniResurs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnIzmeniResurs.Size = new System.Drawing.Size(170, 106);
+            this.btnIzmeniResurs.Size = new System.Drawing.Size(128, 86);
             this.btnIzmeniResurs.TabIndex = 2;
             this.btnIzmeniResurs.Text = "Izmeni resurs";
-            this.btnIzmeniResurs.UseVisualStyleBackColor = true;
+            this.btnIzmeniResurs.UseVisualStyleBackColor = false;
             this.btnIzmeniResurs.Click += new System.EventHandler(this.btnIzmeniResurs_Click);
             // 
             // btnObrisiResurs
             // 
-            this.btnObrisiResurs.Location = new System.Drawing.Point(412, 275);
+            this.btnObrisiResurs.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnObrisiResurs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnObrisiResurs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnObrisiResurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnObrisiResurs.Location = new System.Drawing.Point(309, 223);
+            this.btnObrisiResurs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnObrisiResurs.Name = "btnObrisiResurs";
-            this.btnObrisiResurs.Size = new System.Drawing.Size(170, 106);
+            this.btnObrisiResurs.Size = new System.Drawing.Size(128, 86);
             this.btnObrisiResurs.TabIndex = 3;
             this.btnObrisiResurs.Text = "Obrisi resurs";
-            this.btnObrisiResurs.UseVisualStyleBackColor = true;
+            this.btnObrisiResurs.UseVisualStyleBackColor = false;
             this.btnObrisiResurs.Click += new System.EventHandler(this.btnObrisiResurs_Click);
             // 
             // ResursiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 399);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(446, 324);
             this.Controls.Add(this.btnObrisiResurs);
             this.Controls.Add(this.btnIzmeniResurs);
             this.Controls.Add(this.btnDodajResurs);
             this.Controls.Add(this.lvResursi);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ResursiForm";
             this.Text = "ResursiForm";
             this.Load += new System.EventHandler(this.ResursiForm_Load);

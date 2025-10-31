@@ -43,18 +43,20 @@
             // labelIme
             // 
             this.labelIme.AutoSize = true;
+            this.labelIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIme.Location = new System.Drawing.Point(12, 37);
             this.labelIme.Name = "labelIme";
-            this.labelIme.Size = new System.Drawing.Size(72, 13);
+            this.labelIme.Size = new System.Drawing.Size(85, 13);
             this.labelIme.TabIndex = 0;
             this.labelIme.Text = "Ime kontakta:";
             // 
             // labelOdnos
             // 
             this.labelOdnos.AutoSize = true;
+            this.labelOdnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOdnos.Location = new System.Drawing.Point(12, 79);
             this.labelOdnos.Name = "labelOdnos";
-            this.labelOdnos.Size = new System.Drawing.Size(41, 13);
+            this.labelOdnos.Size = new System.Drawing.Size(47, 13);
             this.labelOdnos.TabIndex = 1;
             this.labelOdnos.Text = "Odnos:";
             // 
@@ -80,16 +82,22 @@
             // 
             // btnDodajInfo
             // 
+            this.btnDodajInfo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodajInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodajInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodajInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDodajInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDodajInfo.Location = new System.Drawing.Point(267, 35);
             this.btnDodajInfo.Name = "btnDodajInfo";
             this.btnDodajInfo.Size = new System.Drawing.Size(117, 21);
             this.btnDodajInfo.TabIndex = 3;
             this.btnDodajInfo.Text = "Dodaj informaciju";
-            this.btnDodajInfo.UseVisualStyleBackColor = true;
+            this.btnDodajInfo.UseVisualStyleBackColor = false;
             this.btnDodajInfo.Click += new System.EventHandler(this.btnDodajInfo_Click);
             // 
             // txtKontaktInfo
             // 
+            this.txtKontaktInfo.BackColor = System.Drawing.Color.LightGray;
             this.txtKontaktInfo.Location = new System.Drawing.Point(6, 36);
             this.txtKontaktInfo.Name = "txtKontaktInfo";
             this.txtKontaktInfo.Size = new System.Drawing.Size(246, 20);
@@ -97,16 +105,22 @@
             // 
             // btnSnimi
             // 
+            this.btnSnimi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSnimi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSnimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSnimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSnimi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSnimi.Location = new System.Drawing.Point(412, 393);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(111, 38);
             this.btnSnimi.TabIndex = 3;
             this.btnSnimi.Text = "Sačuvaj kontakt";
-            this.btnSnimi.UseVisualStyleBackColor = true;
+            this.btnSnimi.UseVisualStyleBackColor = false;
             this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
             // 
             // txtIme
             // 
+            this.txtIme.BackColor = System.Drawing.Color.LightGray;
             this.txtIme.Location = new System.Drawing.Point(101, 34);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(166, 20);
@@ -114,6 +128,7 @@
             // 
             // txtOdnos
             // 
+            this.txtOdnos.BackColor = System.Drawing.Color.LightGray;
             this.txtOdnos.Location = new System.Drawing.Point(101, 72);
             this.txtOdnos.Name = "txtOdnos";
             this.txtOdnos.Size = new System.Drawing.Size(166, 20);
@@ -123,6 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(532, 450);
             this.Controls.Add(this.txtOdnos);
             this.Controls.Add(this.txtIme);
@@ -130,6 +146,7 @@
             this.Controls.Add(this.gbKontaktInfo);
             this.Controls.Add(this.labelOdnos);
             this.Controls.Add(this.labelIme);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "DodajKontaktForm";
             this.Text = "DodajKontakt";
             this.gbKontaktInfo.ResumeLayout(false);

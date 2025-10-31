@@ -69,28 +69,37 @@
             // 
             // btnIzaberi
             // 
+            this.btnIzaberi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzaberi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzaberi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzaberi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzaberi.Location = new System.Drawing.Point(332, 206);
             this.btnIzaberi.Name = "btnIzaberi";
             this.btnIzaberi.Size = new System.Drawing.Size(107, 59);
             this.btnIzaberi.TabIndex = 1;
             this.btnIzaberi.Text = "Izaberi";
-            this.btnIzaberi.UseVisualStyleBackColor = true;
+            this.btnIzaberi.UseVisualStyleBackColor = false;
             this.btnIzaberi.Click += new System.EventHandler(this.btnIzaberi_Click);
             // 
             // btnOdustani
             // 
+            this.btnOdustani.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnOdustani.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnOdustani.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnOdustani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdustani.Location = new System.Drawing.Point(332, 280);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(107, 59);
             this.btnOdustani.TabIndex = 2;
             this.btnOdustani.Text = "Odustani";
-            this.btnOdustani.UseVisualStyleBackColor = true;
+            this.btnOdustani.UseVisualStyleBackColor = false;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
             // IzaberiStanovnikaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(462, 354);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnIzaberi);

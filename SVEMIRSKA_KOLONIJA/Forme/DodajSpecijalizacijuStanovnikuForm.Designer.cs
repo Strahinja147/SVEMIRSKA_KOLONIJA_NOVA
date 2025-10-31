@@ -42,41 +42,47 @@
             // labelSpecijalizacija
             // 
             this.labelSpecijalizacija.AutoSize = true;
+            this.labelSpecijalizacija.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSpecijalizacija.Location = new System.Drawing.Point(12, 31);
             this.labelSpecijalizacija.Name = "labelSpecijalizacija";
-            this.labelSpecijalizacija.Size = new System.Drawing.Size(76, 13);
+            this.labelSpecijalizacija.Size = new System.Drawing.Size(92, 13);
             this.labelSpecijalizacija.TabIndex = 0;
             this.labelSpecijalizacija.Text = "Specijalizacija:";
+            this.labelSpecijalizacija.Click += new System.EventHandler(this.labelSpecijalizacija_Click);
             // 
             // labelNivo
             // 
             this.labelNivo.AutoSize = true;
+            this.labelNivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNivo.Location = new System.Drawing.Point(12, 73);
             this.labelNivo.Name = "labelNivo";
-            this.labelNivo.Size = new System.Drawing.Size(83, 13);
+            this.labelNivo.Size = new System.Drawing.Size(99, 13);
             this.labelNivo.TabIndex = 1;
             this.labelNivo.Text = "Nivo ekspertize:";
             // 
             // labelDatum
             // 
             this.labelDatum.AutoSize = true;
+            this.labelDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDatum.Location = new System.Drawing.Point(12, 115);
             this.labelDatum.Name = "labelDatum";
-            this.labelDatum.Size = new System.Drawing.Size(80, 13);
+            this.labelDatum.Size = new System.Drawing.Size(95, 13);
             this.labelDatum.TabIndex = 2;
             this.labelDatum.Text = "Datum sticanja:";
             // 
             // labelInstitucija
             // 
             this.labelInstitucija.AutoSize = true;
+            this.labelInstitucija.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelInstitucija.Location = new System.Drawing.Point(12, 159);
             this.labelInstitucija.Name = "labelInstitucija";
-            this.labelInstitucija.Size = new System.Drawing.Size(54, 13);
+            this.labelInstitucija.Size = new System.Drawing.Size(66, 13);
             this.labelInstitucija.TabIndex = 3;
             this.labelInstitucija.Text = "Institucija:";
             // 
             // cmbSpecijalizacija
             // 
+            this.cmbSpecijalizacija.BackColor = System.Drawing.Color.LightGray;
             this.cmbSpecijalizacija.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSpecijalizacija.FormattingEnabled = true;
             this.cmbSpecijalizacija.Location = new System.Drawing.Point(150, 28);
@@ -94,6 +100,7 @@
             // 
             // txtInstitucija
             // 
+            this.txtInstitucija.BackColor = System.Drawing.Color.LightGray;
             this.txtInstitucija.Location = new System.Drawing.Point(150, 156);
             this.txtInstitucija.Name = "txtInstitucija";
             this.txtInstitucija.Size = new System.Drawing.Size(179, 20);
@@ -101,16 +108,22 @@
             // 
             // btnSnimi
             // 
+            this.btnSnimi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSnimi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSnimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSnimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSnimi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSnimi.Location = new System.Drawing.Point(243, 194);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(86, 32);
             this.btnSnimi.TabIndex = 8;
             this.btnSnimi.Text = "Sačuvaj";
-            this.btnSnimi.UseVisualStyleBackColor = true;
+            this.btnSnimi.UseVisualStyleBackColor = false;
             this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
             // 
             // cmbNivoEks
             // 
+            this.cmbNivoEks.BackColor = System.Drawing.Color.LightGray;
             this.cmbNivoEks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNivoEks.FormattingEnabled = true;
             this.cmbNivoEks.Items.AddRange(new object[] {
@@ -127,6 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(347, 245);
             this.Controls.Add(this.cmbNivoEks);
             this.Controls.Add(this.btnSnimi);
@@ -137,6 +151,7 @@
             this.Controls.Add(this.labelDatum);
             this.Controls.Add(this.labelNivo);
             this.Controls.Add(this.labelSpecijalizacija);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "DodajSpecijalizacijuStanovnikuForm";
             this.Text = "DodajSpecijalizacijuStanovnikuForm";
             this.Load += new System.EventHandler(this.DodajSpecijalizacijuStanovnikuForm_Load);

@@ -53,50 +53,56 @@
             // labelNaziv
             // 
             this.labelNaziv.AutoSize = true;
+            this.labelNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNaziv.Location = new System.Drawing.Point(12, 21);
             this.labelNaziv.Name = "labelNaziv";
-            this.labelNaziv.Size = new System.Drawing.Size(37, 13);
+            this.labelNaziv.Size = new System.Drawing.Size(43, 13);
             this.labelNaziv.TabIndex = 0;
             this.labelNaziv.Text = "Naziv:";
             // 
             // labelTip
             // 
             this.labelTip.AutoSize = true;
+            this.labelTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTip.Location = new System.Drawing.Point(12, 65);
             this.labelTip.Name = "labelTip";
-            this.labelTip.Size = new System.Drawing.Size(63, 13);
+            this.labelTip.Size = new System.Drawing.Size(75, 13);
             this.labelTip.TabIndex = 1;
             this.labelTip.Text = "Tip sektora:";
             // 
             // labelKapacitet
             // 
             this.labelKapacitet.AutoSize = true;
+            this.labelKapacitet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKapacitet.Location = new System.Drawing.Point(12, 108);
             this.labelKapacitet.Name = "labelKapacitet";
-            this.labelKapacitet.Size = new System.Drawing.Size(55, 13);
+            this.labelKapacitet.Size = new System.Drawing.Size(65, 13);
             this.labelKapacitet.TabIndex = 2;
             this.labelKapacitet.Text = "Kapacitet:";
             // 
             // labelPovrsina
             // 
             this.labelPovrsina.AutoSize = true;
+            this.labelPovrsina.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPovrsina.Location = new System.Drawing.Point(12, 143);
             this.labelPovrsina.Name = "labelPovrsina";
-            this.labelPovrsina.Size = new System.Drawing.Size(71, 13);
+            this.labelPovrsina.Size = new System.Drawing.Size(85, 13);
             this.labelPovrsina.TabIndex = 3;
             this.labelPovrsina.Text = "Površina (m²):";
             // 
             // labelVodja
             // 
             this.labelVodja.AutoSize = true;
+            this.labelVodja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVodja.Location = new System.Drawing.Point(12, 187);
             this.labelVodja.Name = "labelVodja";
-            this.labelVodja.Size = new System.Drawing.Size(74, 13);
+            this.labelVodja.Size = new System.Drawing.Size(87, 13);
             this.labelVodja.TabIndex = 4;
             this.labelVodja.Text = "Vođa sektora:";
             // 
             // txtNaziv
             // 
+            this.txtNaziv.BackColor = System.Drawing.Color.LightGray;
             this.txtNaziv.Location = new System.Drawing.Point(139, 18);
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.Size = new System.Drawing.Size(166, 20);
@@ -104,6 +110,7 @@
             // 
             // txtKapacitet
             // 
+            this.txtKapacitet.BackColor = System.Drawing.Color.LightGray;
             this.txtKapacitet.Location = new System.Drawing.Point(139, 101);
             this.txtKapacitet.Name = "txtKapacitet";
             this.txtKapacitet.Size = new System.Drawing.Size(166, 20);
@@ -111,6 +118,7 @@
             // 
             // txtPovrsina
             // 
+            this.txtPovrsina.BackColor = System.Drawing.Color.LightGray;
             this.txtPovrsina.Location = new System.Drawing.Point(139, 140);
             this.txtPovrsina.Name = "txtPovrsina";
             this.txtPovrsina.Size = new System.Drawing.Size(166, 20);
@@ -118,6 +126,7 @@
             // 
             // txtVodjaSektora
             // 
+            this.txtVodjaSektora.BackColor = System.Drawing.Color.LightGray;
             this.txtVodjaSektora.Location = new System.Drawing.Point(139, 184);
             this.txtVodjaSektora.Name = "txtVodjaSektora";
             this.txtVodjaSektora.ReadOnly = true;
@@ -126,12 +135,17 @@
             // 
             // btnDodeliVodju
             // 
+            this.btnDodeliVodju.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodeliVodju.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodeliVodju.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodeliVodju.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDodeliVodju.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDodeliVodju.Location = new System.Drawing.Point(331, 182);
             this.btnDodeliVodju.Name = "btnDodeliVodju";
             this.btnDodeliVodju.Size = new System.Drawing.Size(101, 23);
             this.btnDodeliVodju.TabIndex = 10;
             this.btnDodeliVodju.Text = "Izaberi vođu...";
-            this.btnDodeliVodju.UseVisualStyleBackColor = true;
+            this.btnDodeliVodju.UseVisualStyleBackColor = false;
             this.btnDodeliVodju.Click += new System.EventHandler(this.btnDodeliVodju_Click);
             // 
             // gbRadnici
@@ -177,36 +191,52 @@
             // 
             // btnDodeliRadnika
             // 
+            this.btnDodeliRadnika.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodeliRadnika.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodeliRadnika.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodeliRadnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDodeliRadnika.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDodeliRadnika.Location = new System.Drawing.Point(331, 254);
             this.btnDodeliRadnika.Name = "btnDodeliRadnika";
             this.btnDodeliRadnika.Size = new System.Drawing.Size(101, 43);
             this.btnDodeliRadnika.TabIndex = 12;
             this.btnDodeliRadnika.Text = "Dodeli radnika";
-            this.btnDodeliRadnika.UseVisualStyleBackColor = true;
+            this.btnDodeliRadnika.UseVisualStyleBackColor = false;
             this.btnDodeliRadnika.Click += new System.EventHandler(this.btnDodeliRadnika_Click);
             // 
             // btnSnimi
             // 
+            this.btnSnimi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSnimi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSnimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSnimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSnimi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSnimi.Location = new System.Drawing.Point(331, 373);
             this.btnSnimi.Name = "btnSnimi";
             this.btnSnimi.Size = new System.Drawing.Size(101, 43);
             this.btnSnimi.TabIndex = 13;
             this.btnSnimi.Text = "Sačuvaj";
-            this.btnSnimi.UseVisualStyleBackColor = true;
+            this.btnSnimi.UseVisualStyleBackColor = false;
             this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
             // 
             // btnUkloniRadnika
             // 
+            this.btnUkloniRadnika.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUkloniRadnika.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnUkloniRadnika.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnUkloniRadnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUkloniRadnika.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUkloniRadnika.Location = new System.Drawing.Point(331, 312);
             this.btnUkloniRadnika.Name = "btnUkloniRadnika";
             this.btnUkloniRadnika.Size = new System.Drawing.Size(101, 43);
             this.btnUkloniRadnika.TabIndex = 14;
             this.btnUkloniRadnika.Text = "Ukloni radnika";
-            this.btnUkloniRadnika.UseVisualStyleBackColor = true;
+            this.btnUkloniRadnika.UseVisualStyleBackColor = false;
             this.btnUkloniRadnika.Click += new System.EventHandler(this.btnUkloniRadnika_Click);
             // 
             // cmbTipSektora
             // 
+            this.cmbTipSektora.BackColor = System.Drawing.Color.LightGray;
             this.cmbTipSektora.FormattingEnabled = true;
             this.cmbTipSektora.Items.AddRange(new object[] {
             "Laboratorija ",
@@ -223,6 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(476, 450);
             this.Controls.Add(this.cmbTipSektora);
             this.Controls.Add(this.btnUkloniRadnika);
@@ -239,6 +270,7 @@
             this.Controls.Add(this.labelKapacitet);
             this.Controls.Add(this.labelTip);
             this.Controls.Add(this.labelNaziv);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "DodajIzmeniSektorForm";
             this.Text = "DodajIzmeniSektorForm";
             this.Load += new System.EventHandler(this.DodajIzmeniSektorForm_Load);
