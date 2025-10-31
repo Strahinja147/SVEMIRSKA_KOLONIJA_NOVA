@@ -44,6 +44,7 @@
             this.numGodine = new System.Windows.Forms.NumericUpDown();
             this.btnSacuvaj = new System.Windows.Forms.Button();
             this.groupBoxPovezaniPodaci = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.listViewProgramirao = new System.Windows.Forms.ListView();
             this.listViewOdgovoranZa = new System.Windows.Forms.ListView();
             this.listViewSektoriKojeVodi = new System.Windows.Forms.ListView();
@@ -51,6 +52,10 @@
             this.listViewKontakti = new System.Windows.Forms.ListView();
             this.btnDodajSpecijalizaciju = new System.Windows.Forms.Button();
             this.btnDodajKontakt = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numGodine)).BeginInit();
             this.groupBoxPovezaniPodaci.SuspendLayout();
             this.SuspendLayout();
@@ -180,62 +185,83 @@
             // 
             // groupBoxPovezaniPodaci
             // 
+            this.groupBoxPovezaniPodaci.Controls.Add(this.label12);
+            this.groupBoxPovezaniPodaci.Controls.Add(this.label11);
+            this.groupBoxPovezaniPodaci.Controls.Add(this.label10);
+            this.groupBoxPovezaniPodaci.Controls.Add(this.label9);
+            this.groupBoxPovezaniPodaci.Controls.Add(this.label8);
             this.groupBoxPovezaniPodaci.Controls.Add(this.listViewProgramirao);
             this.groupBoxPovezaniPodaci.Controls.Add(this.listViewOdgovoranZa);
             this.groupBoxPovezaniPodaci.Controls.Add(this.listViewSektoriKojeVodi);
             this.groupBoxPovezaniPodaci.Controls.Add(this.listViewSpecijalizacije);
             this.groupBoxPovezaniPodaci.Controls.Add(this.listViewKontakti);
-            this.groupBoxPovezaniPodaci.Location = new System.Drawing.Point(457, 58);
+            this.groupBoxPovezaniPodaci.Location = new System.Drawing.Point(474, 6);
             this.groupBoxPovezaniPodaci.Name = "groupBoxPovezaniPodaci";
-            this.groupBoxPovezaniPodaci.Size = new System.Drawing.Size(314, 341);
+            this.groupBoxPovezaniPodaci.Size = new System.Drawing.Size(314, 432);
             this.groupBoxPovezaniPodaci.TabIndex = 15;
             this.groupBoxPovezaniPodaci.TabStop = false;
             this.groupBoxPovezaniPodaci.Text = "Povezani podaci";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Kontakt na zemlji:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // listViewProgramirao
             // 
             this.listViewProgramirao.HideSelection = false;
-            this.listViewProgramirao.Location = new System.Drawing.Point(13, 275);
+            this.listViewProgramirao.Location = new System.Drawing.Point(11, 367);
             this.listViewProgramirao.Name = "listViewProgramirao";
-            this.listViewProgramirao.Size = new System.Drawing.Size(289, 37);
+            this.listViewProgramirao.Size = new System.Drawing.Size(289, 55);
             this.listViewProgramirao.TabIndex = 4;
             this.listViewProgramirao.UseCompatibleStateImageBehavior = false;
+            this.listViewProgramirao.View = System.Windows.Forms.View.Details;
             // 
             // listViewOdgovoranZa
             // 
             this.listViewOdgovoranZa.HideSelection = false;
-            this.listViewOdgovoranZa.Location = new System.Drawing.Point(13, 216);
+            this.listViewOdgovoranZa.Location = new System.Drawing.Point(11, 290);
             this.listViewOdgovoranZa.Name = "listViewOdgovoranZa";
-            this.listViewOdgovoranZa.Size = new System.Drawing.Size(289, 37);
+            this.listViewOdgovoranZa.Size = new System.Drawing.Size(289, 55);
             this.listViewOdgovoranZa.TabIndex = 3;
             this.listViewOdgovoranZa.UseCompatibleStateImageBehavior = false;
+            this.listViewOdgovoranZa.View = System.Windows.Forms.View.Details;
             // 
             // listViewSektoriKojeVodi
             // 
             this.listViewSektoriKojeVodi.HideSelection = false;
-            this.listViewSektoriKojeVodi.Location = new System.Drawing.Point(13, 152);
+            this.listViewSektoriKojeVodi.Location = new System.Drawing.Point(11, 209);
             this.listViewSektoriKojeVodi.Name = "listViewSektoriKojeVodi";
-            this.listViewSektoriKojeVodi.Size = new System.Drawing.Size(289, 37);
+            this.listViewSektoriKojeVodi.Size = new System.Drawing.Size(289, 55);
             this.listViewSektoriKojeVodi.TabIndex = 2;
             this.listViewSektoriKojeVodi.UseCompatibleStateImageBehavior = false;
+            this.listViewSektoriKojeVodi.View = System.Windows.Forms.View.Details;
             // 
             // listViewSpecijalizacije
             // 
             this.listViewSpecijalizacije.HideSelection = false;
-            this.listViewSpecijalizacije.Location = new System.Drawing.Point(11, 82);
+            this.listViewSpecijalizacije.Location = new System.Drawing.Point(11, 126);
             this.listViewSpecijalizacije.Name = "listViewSpecijalizacije";
-            this.listViewSpecijalizacije.Size = new System.Drawing.Size(289, 37);
+            this.listViewSpecijalizacije.Size = new System.Drawing.Size(289, 55);
             this.listViewSpecijalizacije.TabIndex = 1;
             this.listViewSpecijalizacije.UseCompatibleStateImageBehavior = false;
+            this.listViewSpecijalizacije.View = System.Windows.Forms.View.Details;
+            this.listViewSpecijalizacije.SelectedIndexChanged += new System.EventHandler(this.listViewSpecijalizacije_SelectedIndexChanged);
             // 
             // listViewKontakti
             // 
             this.listViewKontakti.HideSelection = false;
-            this.listViewKontakti.Location = new System.Drawing.Point(11, 24);
+            this.listViewKontakti.Location = new System.Drawing.Point(11, 41);
             this.listViewKontakti.Name = "listViewKontakti";
-            this.listViewKontakti.Size = new System.Drawing.Size(289, 37);
+            this.listViewKontakti.Size = new System.Drawing.Size(289, 55);
             this.listViewKontakti.TabIndex = 0;
             this.listViewKontakti.UseCompatibleStateImageBehavior = false;
+            this.listViewKontakti.View = System.Windows.Forms.View.Details;
             // 
             // btnDodajSpecijalizaciju
             // 
@@ -256,6 +282,42 @@
             this.btnDodajKontakt.Text = "Dodaj kontakt";
             this.btnDodajKontakt.UseVisualStyleBackColor = true;
             this.btnDodajKontakt.Click += new System.EventHandler(this.btnDodajKontakt_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 110);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(121, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Poseduje specijalizaciju:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 193);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Sektori koje vodi:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 274);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Odgovoran za robota:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(8, 351);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(99, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Programirao robota:";
             // 
             // DodajStanovnikaForm
             // 
@@ -285,6 +347,7 @@
             this.Load += new System.EventHandler(this.DodajStanovnikaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numGodine)).EndInit();
             this.groupBoxPovezaniPodaci.ResumeLayout(false);
+            this.groupBoxPovezaniPodaci.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +378,10 @@
         private System.Windows.Forms.ListView listViewOdgovoranZa;
         private System.Windows.Forms.Button btnDodajSpecijalizaciju;
         private System.Windows.Forms.Button btnDodajKontakt;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }

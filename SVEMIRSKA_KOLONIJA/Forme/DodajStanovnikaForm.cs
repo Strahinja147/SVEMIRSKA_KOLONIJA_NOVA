@@ -35,6 +35,7 @@ namespace SVEMIRSKA_KOLONIJA.Forme
 
         private void DodajStanovnikaForm_Load(object sender, EventArgs e)
         {
+
             cmbPol.Items.Add('M');
             cmbPol.Items.Add('Z');
 
@@ -65,35 +66,106 @@ namespace SVEMIRSKA_KOLONIJA.Forme
 
         private void PopuniPovezanePodatke()
         {
+            // Koristimo BeginUpdate/EndUpdate za bolje performanse i manje treperenja
+
             // --- Kontakti na Zemlji ---
+            listViewKontakti.BeginUpdate();
             listViewKontakti.Items.Clear();
-            if (listViewKontakti.Columns.Count == 0) // Dodaj kolone samo ako ne postoje
+            if (listViewKontakti.Columns.Count == 0)
             {
-                listViewKontakti.Columns.Add("Ime", 120);
-                listViewKontakti.Columns.Add("Odnos", 80);
+                listViewKontakti.Columns.Add("Ime");
+                listViewKontakti.Columns.Add("Odnos");
             }
             foreach (var kontakt in this.privremeniKontakti)
             {
                 listViewKontakti.Items.Add(new ListViewItem(new string[] { kontakt.Ime, kontakt.Odnos }));
             }
-            listViewKontakti.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            // ISPRAVKA: Ručno podešavanje širine kolona
+            listViewKontakti.Columns[1].Width = -1; // Kolona "Odnos" se širi po svom sadržaju
+            listViewKontakti.Columns[0].Width = -2; // Kolona "Ime" popunjava ostatak
+            listViewKontakti.EndUpdate();
+
 
             // --- Specijalizacije ---
+            listViewSpecijalizacije.BeginUpdate();
             listViewSpecijalizacije.Items.Clear();
             if (listViewSpecijalizacije.Columns.Count == 0)
             {
-                listViewSpecijalizacije.Columns.Add("Naziv", 150);
-                listViewSpecijalizacije.Columns.Add("Nivo Ekspertize", 100);
+                listViewSpecijalizacije.Columns.Add("Naziv");
+                listViewSpecijalizacije.Columns.Add("Nivo Ekspertize");
             }
             foreach (var spec in this.privremeneSpecijalizacije)
             {
                 string naziv = spec.Specijalizacija?.Naziv ?? spec.NazivSpecijalizacije;
                 listViewSpecijalizacije.Items.Add(new ListViewItem(new string[] { naziv, spec.NivoEkspertize }));
             }
-            listViewSpecijalizacije.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            // ISPRAVKA: Ručno podešavanje širine kolona
+            listViewSpecijalizacije.Columns[1].Width = -1; // Kolona "Nivo" se širi po svom sadržaju
+            listViewSpecijalizacije.Columns[0].Width = -2; // Kolona "Naziv" popunjava ostatak
+            listViewSpecijalizacije.EndUpdate();
 
-            // ... i tako za ostale ListView kontrole
-            // (Prilagodi nazive listViewSektoriKojeVodi, listViewOdgovoranZa itd. onima iz tvog dizajnera)
+
+            // --- Sektori koje vodi ---
+            listViewSektoriKojeVodi.BeginUpdate();
+            listViewSektoriKojeVodi.Items.Clear();
+            if (listViewSektoriKojeVodi.Columns.Count == 0)
+            {
+                listViewSektoriKojeVodi.Columns.Add("Naziv Sektora");
+                listViewSektoriKojeVodi.Columns.Add("Tip");
+            }
+            if (this.Stanovnik.SektoriKojeVodi != null)
+            {
+                foreach (var sektor in this.Stanovnik.SektoriKojeVodi)
+                {
+                    listViewSektoriKojeVodi.Items.Add(new ListViewItem(new string[] { sektor.Naziv, sektor.TipSektora }));
+                }
+            }
+            // ISPRAVKA: Ručno podešavanje širine kolona
+            listViewSektoriKojeVodi.Columns[1].Width = -1; // Kolona "Tip" se širi po svom sadržaju
+            listViewSektoriKojeVodi.Columns[0].Width = -2; // Kolona "Naziv Sektora" popunjava ostatak
+            listViewSektoriKojeVodi.EndUpdate();
+
+
+            // --- Odgovoran za robote ---
+            listViewOdgovoranZa.BeginUpdate();
+            listViewOdgovoranZa.Items.Clear();
+            if (listViewOdgovoranZa.Columns.Count == 0)
+            {
+                listViewOdgovoranZa.Columns.Add("Šifra Robota");
+                listViewOdgovoranZa.Columns.Add("Tip");
+            }
+            if (this.Stanovnik.OdgovoranZaRobote != null)
+            {
+                foreach (var robot in this.Stanovnik.OdgovoranZaRobote)
+                {
+                    listViewOdgovoranZa.Items.Add(new ListViewItem(new string[] { robot.Sifra, robot.Tip }));
+                }
+            }
+            // ISPRAVKA: Ručno podešavanje širine kolona
+            listViewOdgovoranZa.Columns[1].Width = -1;
+            listViewOdgovoranZa.Columns[0].Width = -2;
+            listViewOdgovoranZa.EndUpdate();
+
+
+            // --- Programirao robote ---
+            listViewProgramirao.BeginUpdate();
+            listViewProgramirao.Items.Clear();
+            if (listViewProgramirao.Columns.Count == 0)
+            {
+                listViewProgramirao.Columns.Add("Šifra Robota");
+                listViewProgramirao.Columns.Add("Tip");
+            }
+            if (this.Stanovnik.ProgramiraniRoboti != null)
+            {
+                foreach (var robot in this.Stanovnik.ProgramiraniRoboti)
+                {
+                    listViewProgramirao.Items.Add(new ListViewItem(new string[] { robot.Sifra, robot.Tip }));
+                }
+            }
+            // ISPRAVKA: Ručno podešavanje širine kolona
+            listViewProgramirao.Columns[1].Width = -1;
+            listViewProgramirao.Columns[0].Width = -2;
+            listViewProgramirao.EndUpdate();
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
@@ -175,6 +247,16 @@ namespace SVEMIRSKA_KOLONIJA.Forme
                 this.privremeniKontakti.Add(noviKontakt);
                 PopuniPovezanePodatke();
             }
+        }
+
+        private void listViewSpecijalizacije_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

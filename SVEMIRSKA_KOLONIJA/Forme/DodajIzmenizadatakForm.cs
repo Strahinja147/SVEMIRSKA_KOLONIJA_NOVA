@@ -29,10 +29,17 @@ namespace SVEMIRSKA_KOLONIJA.Forme
 
         private void DodajIzmenizadatakForm_Load(object sender, EventArgs e)
         {
+            // ====================== IZMENA 1: POČETAK ======================
+            // Postavljamo maksimalnu vrednost za ocenu na 10.
+            numOcenaUspesnosti.Maximum = 10;
+            // Dobra je praksa postaviti i minimalnu vrednost.
+            numOcenaUspesnosti.Minimum = 0;
+            // ======================= IZMENA 1: KRAJ ========================
+
 
             cmbTipZad.Items.AddRange(new object[] { "Evakuacija", "Istraživanje", "Održavanje", "Medicinska intervencija", "Eksperiment" });
 
-            var moguciNadzadaci = DTOManager.VratiSveZadatke(); 
+            var moguciNadzadaci = DTOManager.VratiSveZadatke();
             cmbNadzadatak.Items.Add("Nema nadzadatka");
             foreach (var z in moguciNadzadaci)
             {
@@ -81,6 +88,7 @@ namespace SVEMIRSKA_KOLONIJA.Forme
                         dtpDatumZavrsetka.Enabled = false;
                     }
 
+                    // ... ostatak vašeg if bloka ostaje isti ...
                     if (detalji.Nadzadatak != null)
                     {
                         foreach (var item in cmbNadzadatak.Items)
@@ -94,7 +102,7 @@ namespace SVEMIRSKA_KOLONIJA.Forme
                     }
                     else
                     {
-                        cmbNadzadatak.SelectedIndex = 0; 
+                        cmbNadzadatak.SelectedIndex = 0;
                     }
 
                     for (int i = 0; i < clbSpecijalizacije.Items.Count; i++)
@@ -117,12 +125,12 @@ namespace SVEMIRSKA_KOLONIJA.Forme
                             cmbTipZad.SelectedItem = "Evakuacija";
                             break;
                         case "Istrazivanje":
-                            cmbTipZad.SelectedItem = "Istraživanje"; 
+                            cmbTipZad.SelectedItem = "Istraživanje";
                             break;
                         case "Odrzavanje":
-                            cmbTipZad.SelectedItem = "Održavanje"; 
+                            cmbTipZad.SelectedItem = "Održavanje";
                             break;
-                        case "MedicinskaIntervencija": 
+                        case "MedicinskaIntervencija":
                             cmbTipZad.SelectedItem = "Medicinska intervencija";
                             break;
                         case "Eksperiment":
@@ -154,6 +162,12 @@ namespace SVEMIRSKA_KOLONIJA.Forme
                 this.Text = "Dodavanje novog zadatka";
                 cmbTipZad.SelectedIndex = 0;
                 btnAngazuj.Enabled = false;
+
+                // ====================== IZMENA 2: POČETAK ======================
+                // Inicijalno postavljamo polje za datum završetka na onemogućeno
+                // kada se dodaje novi zadatak.
+                dtpDatumZavrsetka.Enabled = false;
+                // ======================= IZMENA 2: KRAJ ========================
             }
         }
 

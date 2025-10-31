@@ -142,7 +142,7 @@
     </Compile>
     <Compile Include="Forme\DodajIzmeniResursForm.Designer.cs">
       <DependentUpon>DodajIzmeniResursForm.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="Forme\AngazujUcesnikaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,7 +268,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajIzmeniResursForm.resx">
       <DependentUpon>DodajIzmeniResursForm.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\AngazujUcesnikaForm.resx">
       <DependentUpon>AngazujUcesnikaForm.cs</DependentUpon>
     </EmbeddedResource>

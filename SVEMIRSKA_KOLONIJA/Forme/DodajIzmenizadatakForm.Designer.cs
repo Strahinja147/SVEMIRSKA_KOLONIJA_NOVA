@@ -229,6 +229,11 @@
             // 
             this.numOcenaUspesnosti.DecimalPlaces = 1;
             this.numOcenaUspesnosti.Location = new System.Drawing.Point(198, 233);
+            this.numOcenaUspesnosti.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numOcenaUspesnosti.Name = "numOcenaUspesnosti";
             this.numOcenaUspesnosti.Size = new System.Drawing.Size(54, 20);
             this.numOcenaUspesnosti.TabIndex = 15;
