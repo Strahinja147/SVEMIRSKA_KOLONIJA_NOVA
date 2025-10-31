@@ -17,7 +17,7 @@ namespace SVEMIRSKA_KOLONIJA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ResursiForm());
+            Application.Run(new GlavnaForma());
         }
     }
 }
