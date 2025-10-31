@@ -48,55 +48,67 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 44);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Naziv:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 106);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.Size = new System.Drawing.Size(110, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Trenutna količina:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 172);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 16);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Sektor:";
             // 
             // txtNaziv
             // 
-            this.txtNaziv.Location = new System.Drawing.Point(188, 41);
+            this.txtNaziv.BackColor = System.Drawing.Color.LightGray;
+            this.txtNaziv.Location = new System.Drawing.Point(141, 33);
+            this.txtNaziv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNaziv.Name = "txtNaziv";
-            this.txtNaziv.Size = new System.Drawing.Size(192, 22);
+            this.txtNaziv.Size = new System.Drawing.Size(145, 20);
             this.txtNaziv.TabIndex = 3;
             // 
             // numKolicina
             // 
-            this.numKolicina.Location = new System.Drawing.Point(188, 104);
+            this.numKolicina.BackColor = System.Drawing.Color.LightGray;
+            this.numKolicina.Location = new System.Drawing.Point(141, 84);
+            this.numKolicina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numKolicina.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.numKolicina.Name = "numKolicina";
-            this.numKolicina.Size = new System.Drawing.Size(192, 22);
+            this.numKolicina.Size = new System.Drawing.Size(144, 20);
             this.numKolicina.TabIndex = 4;
             // 
             // cbxSkladiste
             // 
+            this.cbxSkladiste.BackColor = System.Drawing.Color.LightGray;
             this.cbxSkladiste.FormattingEnabled = true;
-            this.cbxSkladiste.Location = new System.Drawing.Point(188, 172);
+            this.cbxSkladiste.Location = new System.Drawing.Point(141, 140);
+            this.cbxSkladiste.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxSkladiste.Name = "cbxSkladiste";
-            this.cbxSkladiste.Size = new System.Drawing.Size(192, 24);
+            this.cbxSkladiste.Size = new System.Drawing.Size(145, 21);
             this.cbxSkladiste.TabIndex = 5;
             // 
             // lvUpravitelji
@@ -108,11 +120,12 @@
             this.lvUpravitelji.FullRowSelect = true;
             this.lvUpravitelji.GridLines = true;
             this.lvUpravitelji.HideSelection = false;
-            this.lvUpravitelji.Location = new System.Drawing.Point(15, 276);
+            this.lvUpravitelji.Location = new System.Drawing.Point(11, 224);
+            this.lvUpravitelji.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvUpravitelji.MultiSelect = false;
             this.lvUpravitelji.Name = "lvUpravitelji";
             this.lvUpravitelji.Scrollable = false;
-            this.lvUpravitelji.Size = new System.Drawing.Size(365, 245);
+            this.lvUpravitelji.Size = new System.Drawing.Size(275, 200);
             this.lvUpravitelji.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvUpravitelji.TabIndex = 7;
             this.lvUpravitelji.UseCompatibleStateImageBehavior = false;
@@ -134,48 +147,69 @@
             // 
             // btnSacuvaj
             // 
-            this.btnSacuvaj.Location = new System.Drawing.Point(401, 451);
+            this.btnSacuvaj.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSacuvaj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSacuvaj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSacuvaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSacuvaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSacuvaj.Location = new System.Drawing.Point(301, 366);
+            this.btnSacuvaj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSacuvaj.Name = "btnSacuvaj";
-            this.btnSacuvaj.Size = new System.Drawing.Size(150, 70);
+            this.btnSacuvaj.Size = new System.Drawing.Size(112, 57);
             this.btnSacuvaj.TabIndex = 8;
             this.btnSacuvaj.Text = "Sacuvaj";
-            this.btnSacuvaj.UseVisualStyleBackColor = true;
+            this.btnSacuvaj.UseVisualStyleBackColor = false;
             this.btnSacuvaj.Click += new System.EventHandler(this.btnSacuvaj_Click);
             // 
             // btnDodeliUpravitelja
             // 
-            this.btnDodeliUpravitelja.Location = new System.Drawing.Point(401, 276);
+            this.btnDodeliUpravitelja.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodeliUpravitelja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodeliUpravitelja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodeliUpravitelja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDodeliUpravitelja.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDodeliUpravitelja.Location = new System.Drawing.Point(301, 224);
+            this.btnDodeliUpravitelja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodeliUpravitelja.Name = "btnDodeliUpravitelja";
-            this.btnDodeliUpravitelja.Size = new System.Drawing.Size(150, 70);
+            this.btnDodeliUpravitelja.Size = new System.Drawing.Size(112, 57);
             this.btnDodeliUpravitelja.TabIndex = 9;
             this.btnDodeliUpravitelja.Text = "Dodeli upravitelja";
-            this.btnDodeliUpravitelja.UseVisualStyleBackColor = true;
+            this.btnDodeliUpravitelja.UseVisualStyleBackColor = false;
             this.btnDodeliUpravitelja.Click += new System.EventHandler(this.btnDodeliUpravitelja_Click);
             // 
             // lblUpravitelji
             // 
             this.lblUpravitelji.AutoSize = true;
-            this.lblUpravitelji.Location = new System.Drawing.Point(17, 236);
+            this.lblUpravitelji.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpravitelji.Location = new System.Drawing.Point(13, 192);
+            this.lblUpravitelji.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUpravitelji.Name = "lblUpravitelji";
-            this.lblUpravitelji.Size = new System.Drawing.Size(118, 16);
+            this.lblUpravitelji.Size = new System.Drawing.Size(113, 13);
             this.lblUpravitelji.TabIndex = 10;
             this.lblUpravitelji.Text = "Upravitelji resursa:";
             // 
             // btnUkloniUpravitelja
             // 
-            this.btnUkloniUpravitelja.Location = new System.Drawing.Point(401, 364);
+            this.btnUkloniUpravitelja.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUkloniUpravitelja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnUkloniUpravitelja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnUkloniUpravitelja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUkloniUpravitelja.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUkloniUpravitelja.Location = new System.Drawing.Point(301, 296);
+            this.btnUkloniUpravitelja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUkloniUpravitelja.Name = "btnUkloniUpravitelja";
-            this.btnUkloniUpravitelja.Size = new System.Drawing.Size(150, 70);
+            this.btnUkloniUpravitelja.Size = new System.Drawing.Size(112, 57);
             this.btnUkloniUpravitelja.TabIndex = 11;
             this.btnUkloniUpravitelja.Text = "Ukloni upravitelja";
-            this.btnUkloniUpravitelja.UseVisualStyleBackColor = true;
+            this.btnUkloniUpravitelja.UseVisualStyleBackColor = false;
             this.btnUkloniUpravitelja.Click += new System.EventHandler(this.btnUkloniUpravitelja_Click);
             // 
             // DodajIzmeniResursForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 567);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(432, 461);
             this.Controls.Add(this.btnUkloniUpravitelja);
             this.Controls.Add(this.lblUpravitelji);
             this.Controls.Add(this.lvUpravitelji);
@@ -187,6 +221,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DodajIzmeniResursForm";
             this.Text = "DodajIzmeniResursForm";
             ((System.ComponentModel.ISupportInitialize)(this.numKolicina)).EndInit();

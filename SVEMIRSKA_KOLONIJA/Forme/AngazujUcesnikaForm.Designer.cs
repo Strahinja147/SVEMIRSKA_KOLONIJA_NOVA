@@ -68,21 +68,28 @@
             // 
             // btnAngazuj
             // 
+            this.btnAngazuj.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAngazuj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnAngazuj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnAngazuj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAngazuj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAngazuj.Location = new System.Drawing.Point(12, 288);
             this.btnAngazuj.Name = "btnAngazuj";
             this.btnAngazuj.Size = new System.Drawing.Size(84, 23);
             this.btnAngazuj.TabIndex = 1;
             this.btnAngazuj.Text = "Angažuj";
-            this.btnAngazuj.UseVisualStyleBackColor = true;
+            this.btnAngazuj.UseVisualStyleBackColor = false;
             this.btnAngazuj.Click += new System.EventHandler(this.btnAngazuj_Click);
             // 
             // AngazujUcesnikaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(303, 323);
             this.Controls.Add(this.btnAngazuj);
             this.Controls.Add(this.listViewUcesnici);
+            this.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Name = "AngazujUcesnikaForm";
             this.Text = "AngazujUcesnikaForm";
             this.Load += new System.EventHandler(this.AngazujUcesnikaForm_Load);

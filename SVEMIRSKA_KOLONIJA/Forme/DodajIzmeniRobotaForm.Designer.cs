@@ -46,124 +46,152 @@
             // labelSifra
             // 
             this.labelSifra.AutoSize = true;
-            this.labelSifra.Location = new System.Drawing.Point(16, 62);
+            this.labelSifra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSifra.Location = new System.Drawing.Point(14, 50);
             this.labelSifra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSifra.Name = "labelSifra";
-            this.labelSifra.Size = new System.Drawing.Size(37, 16);
+            this.labelSifra.Size = new System.Drawing.Size(37, 13);
             this.labelSifra.TabIndex = 0;
             this.labelSifra.Text = "Šifra:";
             // 
             // labelTip
             // 
             this.labelTip.AutoSize = true;
-            this.labelTip.Location = new System.Drawing.Point(16, 102);
+            this.labelTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTip.Location = new System.Drawing.Point(14, 83);
             this.labelTip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTip.Name = "labelTip";
-            this.labelTip.Size = new System.Drawing.Size(30, 16);
+            this.labelTip.Size = new System.Drawing.Size(29, 13);
             this.labelTip.TabIndex = 1;
             this.labelTip.Text = "Tip:";
             // 
             // labelOdgovorni
             // 
             this.labelOdgovorni.AutoSize = true;
-            this.labelOdgovorni.Location = new System.Drawing.Point(16, 142);
+            this.labelOdgovorni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOdgovorni.Location = new System.Drawing.Point(14, 115);
             this.labelOdgovorni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOdgovorni.Name = "labelOdgovorni";
-            this.labelOdgovorni.Size = new System.Drawing.Size(133, 16);
+            this.labelOdgovorni.Size = new System.Drawing.Size(128, 13);
             this.labelOdgovorni.TabIndex = 2;
             this.labelOdgovorni.Text = "Odgovorni stanovnik:";
             // 
             // labelProgramer
             // 
             this.labelProgramer.AutoSize = true;
-            this.labelProgramer.Location = new System.Drawing.Point(16, 178);
+            this.labelProgramer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProgramer.Location = new System.Drawing.Point(14, 145);
             this.labelProgramer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProgramer.Name = "labelProgramer";
-            this.labelProgramer.Size = new System.Drawing.Size(74, 16);
+            this.labelProgramer.Size = new System.Drawing.Size(68, 13);
             this.labelProgramer.TabIndex = 3;
             this.labelProgramer.Text = "Programer:";
             // 
             // labelSektor
             // 
             this.labelSektor.AutoSize = true;
-            this.labelSektor.Location = new System.Drawing.Point(16, 218);
+            this.labelSektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSektor.Location = new System.Drawing.Point(14, 177);
             this.labelSektor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSektor.Name = "labelSektor";
-            this.labelSektor.Size = new System.Drawing.Size(49, 16);
+            this.labelSektor.Size = new System.Drawing.Size(48, 13);
             this.labelSektor.TabIndex = 4;
             this.labelSektor.Text = "Sektor:";
             // 
             // txtSifra
             // 
-            this.txtSifra.Location = new System.Drawing.Point(195, 58);
-            this.txtSifra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSifra.BackColor = System.Drawing.Color.LightGray;
+            this.txtSifra.Location = new System.Drawing.Point(170, 47);
+            this.txtSifra.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSifra.Name = "txtSifra";
-            this.txtSifra.Size = new System.Drawing.Size(225, 22);
+            this.txtSifra.Size = new System.Drawing.Size(198, 20);
             this.txtSifra.TabIndex = 5;
             // 
             // txtOdgovorni
             // 
-            this.txtOdgovorni.Location = new System.Drawing.Point(195, 138);
-            this.txtOdgovorni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOdgovorni.BackColor = System.Drawing.Color.LightGray;
+            this.txtOdgovorni.Location = new System.Drawing.Point(170, 112);
+            this.txtOdgovorni.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOdgovorni.Name = "txtOdgovorni";
             this.txtOdgovorni.ReadOnly = true;
-            this.txtOdgovorni.Size = new System.Drawing.Size(225, 22);
+            this.txtOdgovorni.Size = new System.Drawing.Size(198, 20);
             this.txtOdgovorni.TabIndex = 7;
             // 
             // txtProgramer
             // 
-            this.txtProgramer.Location = new System.Drawing.Point(195, 175);
-            this.txtProgramer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProgramer.BackColor = System.Drawing.Color.LightGray;
+            this.txtProgramer.Location = new System.Drawing.Point(170, 142);
+            this.txtProgramer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtProgramer.Name = "txtProgramer";
             this.txtProgramer.ReadOnly = true;
-            this.txtProgramer.Size = new System.Drawing.Size(225, 22);
+            this.txtProgramer.Size = new System.Drawing.Size(198, 20);
             this.txtProgramer.TabIndex = 8;
             // 
             // cmbSektor
             // 
+            this.cmbSektor.BackColor = System.Drawing.Color.LightGray;
             this.cmbSektor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSektor.FormattingEnabled = true;
-            this.cmbSektor.Location = new System.Drawing.Point(195, 214);
-            this.cmbSektor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSektor.Location = new System.Drawing.Point(170, 174);
+            this.cmbSektor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbSektor.Name = "cmbSektor";
-            this.cmbSektor.Size = new System.Drawing.Size(225, 24);
+            this.cmbSektor.Size = new System.Drawing.Size(198, 21);
             this.cmbSektor.TabIndex = 9;
             // 
             // btnIzaberiOdgovornog
             // 
-            this.btnIzaberiOdgovornog.Location = new System.Drawing.Point(451, 134);
-            this.btnIzaberiOdgovornog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIzaberiOdgovornog.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzaberiOdgovornog.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzaberiOdgovornog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzaberiOdgovornog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzaberiOdgovornog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzaberiOdgovornog.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIzaberiOdgovornog.Location = new System.Drawing.Point(394, 109);
+            this.btnIzaberiOdgovornog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnIzaberiOdgovornog.Name = "btnIzaberiOdgovornog";
-            this.btnIzaberiOdgovornog.Size = new System.Drawing.Size(173, 30);
+            this.btnIzaberiOdgovornog.Size = new System.Drawing.Size(152, 24);
             this.btnIzaberiOdgovornog.TabIndex = 11;
             this.btnIzaberiOdgovornog.Text = "Izaberi odgovornog...";
-            this.btnIzaberiOdgovornog.UseVisualStyleBackColor = true;
+            this.btnIzaberiOdgovornog.UseVisualStyleBackColor = false;
             this.btnIzaberiOdgovornog.Click += new System.EventHandler(this.btnIzaberiOdgovornog_Click);
             // 
             // btnIzaberiProgramera
             // 
-            this.btnIzaberiProgramera.Location = new System.Drawing.Point(451, 171);
-            this.btnIzaberiProgramera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIzaberiProgramera.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzaberiProgramera.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzaberiProgramera.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzaberiProgramera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzaberiProgramera.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzaberiProgramera.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIzaberiProgramera.Location = new System.Drawing.Point(394, 139);
+            this.btnIzaberiProgramera.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnIzaberiProgramera.Name = "btnIzaberiProgramera";
-            this.btnIzaberiProgramera.Size = new System.Drawing.Size(173, 30);
+            this.btnIzaberiProgramera.Size = new System.Drawing.Size(152, 24);
             this.btnIzaberiProgramera.TabIndex = 12;
             this.btnIzaberiProgramera.Text = "Izaberi programera...";
-            this.btnIzaberiProgramera.UseVisualStyleBackColor = true;
+            this.btnIzaberiProgramera.UseVisualStyleBackColor = false;
             this.btnIzaberiProgramera.Click += new System.EventHandler(this.btnIzaberiProgramera_Click);
             // 
             // btnSnimi
             // 
-            this.btnSnimi.Location = new System.Drawing.Point(225, 263);
-            this.btnSnimi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSnimi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSnimi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnSnimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnSnimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSnimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSnimi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSnimi.Location = new System.Drawing.Point(197, 214);
+            this.btnSnimi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSnimi.Name = "btnSnimi";
-            this.btnSnimi.Size = new System.Drawing.Size(148, 60);
+            this.btnSnimi.Size = new System.Drawing.Size(130, 49);
             this.btnSnimi.TabIndex = 13;
             this.btnSnimi.Text = "Sačuvaj";
-            this.btnSnimi.UseVisualStyleBackColor = true;
+            this.btnSnimi.UseVisualStyleBackColor = false;
             this.btnSnimi.Click += new System.EventHandler(this.btnSnimi_Click);
             // 
             // cmbTipRobota
             // 
+            this.cmbTipRobota.BackColor = System.Drawing.Color.LightGray;
             this.cmbTipRobota.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipRobota.FormattingEnabled = true;
             this.cmbTipRobota.Items.AddRange(new object[] {
@@ -171,17 +199,18 @@
             "Inženjerski",
             "Medicinski",
             "Nadzorni"});
-            this.cmbTipRobota.Location = new System.Drawing.Point(195, 98);
-            this.cmbTipRobota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTipRobota.Location = new System.Drawing.Point(170, 80);
+            this.cmbTipRobota.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbTipRobota.Name = "cmbTipRobota";
-            this.cmbTipRobota.Size = new System.Drawing.Size(225, 24);
+            this.cmbTipRobota.Size = new System.Drawing.Size(198, 21);
             this.cmbTipRobota.TabIndex = 14;
             // 
             // DodajIzmeniRobotaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 350);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(576, 284);
             this.Controls.Add(this.cmbTipRobota);
             this.Controls.Add(this.btnSnimi);
             this.Controls.Add(this.btnIzaberiProgramera);
@@ -195,7 +224,9 @@
             this.Controls.Add(this.labelOdgovorni);
             this.Controls.Add(this.labelTip);
             this.Controls.Add(this.labelSifra);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "DodajIzmeniRobotaForm";
             this.Text = "DodajIzmeniRobotaForm";
             this.Load += new System.EventHandler(this.DodajIzmeniRobotForm_Load);

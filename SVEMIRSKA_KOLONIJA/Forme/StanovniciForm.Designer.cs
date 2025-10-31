@@ -49,38 +49,51 @@
             // 
             // btnObrisiStanovnika
             // 
+            this.btnObrisiStanovnika.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnObrisiStanovnika.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnObrisiStanovnika.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnObrisiStanovnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObrisiStanovnika.Location = new System.Drawing.Point(588, 282);
             this.btnObrisiStanovnika.Name = "btnObrisiStanovnika";
             this.btnObrisiStanovnika.Size = new System.Drawing.Size(104, 37);
             this.btnObrisiStanovnika.TabIndex = 1;
             this.btnObrisiStanovnika.Text = "Obriši Stanovnika";
-            this.btnObrisiStanovnika.UseVisualStyleBackColor = true;
+            this.btnObrisiStanovnika.UseVisualStyleBackColor = false;
             this.btnObrisiStanovnika.Click += new System.EventHandler(this.btnObrisiStanovnika_Click);
             // 
             // btnIzmeniStanovnika
             // 
+            this.btnIzmeniStanovnika.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzmeniStanovnika.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzmeniStanovnika.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzmeniStanovnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzmeniStanovnika.Location = new System.Drawing.Point(588, 335);
             this.btnIzmeniStanovnika.Name = "btnIzmeniStanovnika";
             this.btnIzmeniStanovnika.Size = new System.Drawing.Size(104, 37);
             this.btnIzmeniStanovnika.TabIndex = 2;
             this.btnIzmeniStanovnika.Text = "Izmeni Stanovnika";
-            this.btnIzmeniStanovnika.UseVisualStyleBackColor = true;
+            this.btnIzmeniStanovnika.UseVisualStyleBackColor = false;
             this.btnIzmeniStanovnika.Click += new System.EventHandler(this.btnIzmeniStanovnika_Click);
             // 
             // btnDodajStanovnika
             // 
+            this.btnDodajStanovnika.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodajStanovnika.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodajStanovnika.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodajStanovnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDodajStanovnika.Location = new System.Drawing.Point(588, 387);
             this.btnDodajStanovnika.Name = "btnDodajStanovnika";
             this.btnDodajStanovnika.Size = new System.Drawing.Size(105, 37);
             this.btnDodajStanovnika.TabIndex = 3;
             this.btnDodajStanovnika.Text = "Dodaj Stanovnika";
-            this.btnDodajStanovnika.UseVisualStyleBackColor = true;
+            this.btnDodajStanovnika.UseVisualStyleBackColor = false;
             this.btnDodajStanovnika.Click += new System.EventHandler(this.btnDodajStanovnika_Click);
             // 
             // StanovniciForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(711, 436);
             this.Controls.Add(this.btnDodajStanovnika);
             this.Controls.Add(this.btnIzmeniStanovnika);

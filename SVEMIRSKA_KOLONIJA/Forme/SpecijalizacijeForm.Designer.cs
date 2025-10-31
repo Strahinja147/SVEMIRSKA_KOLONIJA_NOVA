@@ -63,38 +63,51 @@
             // 
             // btnDodaj
             // 
+            this.btnDodaj.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDodaj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnDodaj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnDodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDodaj.Location = new System.Drawing.Point(231, 206);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(85, 42);
             this.btnDodaj.TabIndex = 1;
             this.btnDodaj.Text = "Dodaj specijalizaciju";
-            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.UseVisualStyleBackColor = false;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnIzmeni
             // 
+            this.btnIzmeni.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIzmeni.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnIzmeni.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnIzmeni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzmeni.Location = new System.Drawing.Point(231, 263);
             this.btnIzmeni.Name = "btnIzmeni";
             this.btnIzmeni.Size = new System.Drawing.Size(85, 42);
             this.btnIzmeni.TabIndex = 2;
             this.btnIzmeni.Text = "Izmeni specijalizaciju";
-            this.btnIzmeni.UseVisualStyleBackColor = true;
+            this.btnIzmeni.UseVisualStyleBackColor = false;
             this.btnIzmeni.Click += new System.EventHandler(this.btnIzmeni_Click);
             // 
             // btnObrisi
             // 
+            this.btnObrisi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnObrisi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnObrisi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
+            this.btnObrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObrisi.Location = new System.Drawing.Point(231, 320);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(85, 42);
             this.btnObrisi.TabIndex = 3;
             this.btnObrisi.Text = "Obriši specijalizaciju";
-            this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.UseVisualStyleBackColor = false;
             this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // SpecijalizacijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(337, 384);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnIzmeni);
